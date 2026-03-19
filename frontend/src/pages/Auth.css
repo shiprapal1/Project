@@ -1,0 +1,135 @@
+/* ===============================
+   AUTH PAGE WRAPPER
+================================= */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2f3b4f, #1f2937);
+  padding: 40px 20px;
+}
+
+/* ===============================
+   FORM CARD
+================================= */
+.auth-form {
+  width: 430px;
+  padding: 45px 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideFade 0.7s ease forwards;
+}
+
+/* ===============================
+   HEADING (SAME AS LOGIN)
+================================= */
+.auth-form h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================= */
+.auth-form input {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.auth-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+  transform: scale(1.02);
+}
+
+/* ===============================
+   SUBMIT BUTTON (SAME AS LOGIN)
+================================= */
+.auth-form button {
+  margin-top: 10px;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.6);
+}
+
+.auth-form button:active {
+  transform: scale(0.97);
+}
+
+/* ===============================
+   LINK TEXT
+================================= */
+.auth-form p {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-form a {
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+  color: #3b82f6;
+}
+
+/* ===============================
+   ENTRY ANIMATION
+================================= */
+@keyframes slideFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 500px) {
+  .auth-form {
+    width: 100%;
+    padding: 35px 25px;
+  }
+}

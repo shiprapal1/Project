@@ -1,0 +1,169 @@
+/* =========================
+   NAVBAR BASE
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: rgba(31, 41, 51, 0.95);
+  backdrop-filter: blur(12px);
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+  animation: fadeDown 0.8s ease forwards;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-circle {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #2DD4BF, #0D5C63);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(45,212,191,0.4);
+  transition: 0.3s ease;
+}
+
+.logo-circle:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  white-space: nowrap; 
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(135deg, #2DD4BF, #0D5C63);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   SIGN UP BUTTON
+========================= */
+
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2DD4BF, #0D5C63);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(45,212,191,0.3);
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(45,212,191,0.5);
+}
+
+/* =========================
+   LOGOUT BUTTON
+========================= */
+
+.logout-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #2DD4BF;
+  color: #2DD4BF;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #2DD4BF;
+  color: #1F2933;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(45,212,191,0.4);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 25px;
+  }
+
+  .nav-right {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}

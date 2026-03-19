@@ -1,0 +1,79 @@
+.reports-page {
+  padding: 40px;
+  text-align: center;
+}
+
+.tabs {
+  margin: 20px 0;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.tabs .active {
+  background: #0f766e;
+  color: white;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.report-card {
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+  color: #222;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.report-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.view-btn {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  background: #0f766e;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.report-card p {
+  color: #333;   /* ✅ ensures visibility */
+  font-size: 14px;
+}
+.report-card h3 {
+  color: #111;
+}
+.reports-page {
+  padding: 40px;
+  text-align: center;
+     /* ✅ safe default */
+}

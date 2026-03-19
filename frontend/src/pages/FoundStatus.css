@@ -1,0 +1,76 @@
+.found-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.success-box {
+  background: #ecfdf5;
+  border-left: 6px solid #22c55e;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.success-box h2 {
+  color: #15803d;
+}
+
+.found-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.found-card h3 {
+  margin-bottom: 6px;
+}
+
+.category {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.found-details p {
+  margin: 6px 0;
+}
+
+.pending {
+  color: #ca8a04;
+  font-weight: 600;
+}
+
+.next-steps {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.next-steps ul {
+  margin-left: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.action-buttons button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.action-buttons button:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.action-buttons .secondary {
+  background: #e5e7eb;
+}
