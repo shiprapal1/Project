@@ -10,6 +10,7 @@ import ReportFound from "./pages/ReportFound";
 import LostItem from "./pages/LostItem";
 import FoundItem from "./pages/FoundItem";
 import MyReports from "./pages/MyReports";
+import Track from "./pages/Track";
 import "./App.css";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         {/* Track / My Items */}
         <Route path="/lost-item" element={<LostItem />} />
         <Route path="/track" element={<LostItem />} />
+        <Route path="/track/:id" element={<Track />} />
 
         {/* Found item success */}
         <Route path="/found-item" element={<FoundItem />} />
